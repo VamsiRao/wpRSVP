@@ -34,4 +34,62 @@ Text Domain: coloredcow
 	}
 }
 
+.navbar-inverse {
+	    
+	   background-color: #000;   
+	   color: #FFF;
+	   
+
+}
+
+.navbar-inverse .navbar-brand{
+
+		color:#FFF;
+}
+.navbar-inverse .navbar-nav >li> a{
+
+		color:#FFF;
+}
+.navbar-inverse .navbar-nav >li> a:hover {
+
+   		color: #1ed760;
+   
+}
+ .navbar-inverse .navbar-brand:hover {
+    
+    	color: #FFE94C;
+    
+}
+
+.btn-green-round-lg{
+
+		 border-radius: 22.5px;
+		 border-color: #1db954;
+		 background-color: #1db954
+}
+
+.btn-green-round-lg:hover{
+		
+		 border-color: #1db954;
+ 		 background-color: #1ed760;
+}
+
+.btn-round{
+
+		border-radius: 17px;
+}
+
+.btn-round-sm{
+
+		border-radius: 15px;
+}
+
+.btn-round-xs{
+
+		border-radius: 11px;
+		padding-left: 10px;
+		padding-right: 10px;
+}
+
+
 @import 'media';
