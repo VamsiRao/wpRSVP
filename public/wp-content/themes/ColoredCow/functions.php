@@ -16,9 +16,10 @@ if ( ! function_exists( 'cc_scripts' ) ) {
 if ( ! function_exists( 'cc_styles' ) ) {
     function cc_styles() {  
         wp_enqueue_style('cc-bootstrap', get_template_directory_uri().'/dist/lib/css/bootstrap.min.css');
-        wp_enqueue_style('cc-custom-bs','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-        wp_enqueue_style('style', get_template_directory_uri().'/style.css');
-
+        wp_enqueue_style('cc-custom-bs','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');       
+        wp_enqueue_style('cc-custom-font','https://fonts.googleapis.com/css?family=Roboto:700');
+         wp_enqueue_style('style', get_template_directory_uri().'/style.css');
+         
     }
     add_action('wp_enqueue_scripts','cc_styles');
 }

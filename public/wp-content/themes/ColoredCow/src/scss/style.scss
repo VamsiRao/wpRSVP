@@ -38,6 +38,8 @@ Text Domain: coloredcow
 	    
 	   background-color: #000;   
 	   color: #FFF;
+	   margin-bottom: 0;
+	 
 	   
 
 }
@@ -57,21 +59,26 @@ Text Domain: coloredcow
 }
  .navbar-inverse .navbar-brand:hover {
     
-    	color: #FFE94C;
+    	color: #1ed760;
     
 }
 
-.btn-green-round-lg{
+
+.btn-green-round-lg, .btn-green-round-lg:focus{
 
 		 border-radius: 22.5px;
 		 border-color: #1db954;
-		 background-color: #1db954
+		 background-color: #1db954;
+		 border: 1px solid transparent;
+		 color: white;
+		 outline: none !important; 
+
 }
 
-.btn-green-round-lg:hover{
-		
-		 border-color: #1db954;
+.btn-green-round-lg:hover,.btn-green-round-lg:active{
+		 border-color: #1ed760;
  		 background-color: #1ed760;
+ 		
 }
 
 .btn-round{
@@ -80,7 +87,7 @@ Text Domain: coloredcow
 }
 
 .btn-round-sm{
-
+		
 		border-radius: 15px;
 }
 
@@ -89,6 +96,54 @@ Text Domain: coloredcow
 		border-radius: 11px;
 		padding-left: 10px;
 		padding-right: 10px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+
+		color: white;    
+    	font-family: 'Roboto', sans-serif;    	
+   
+}
+
+.jumbotron{
+	
+	
+}
+.jumbo-bg{
+		background-image:url("pink dust.png");
+		background-repeat: repeat;
+	
+
+}
+.notebook {
+    background: #fff;
+    font-size: 2.0rem;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 6px 3px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+    background-image: linear-gradient(90deg, #b6d7e8, 2px, transparent, 2px, transparent), linear-gradient(0, #d9eaf3, 1px, transparent, 2px, transparent);
+    background-position: 4rem 0, 0 5px;
+    background-size: 100% 3rem;
+    padding-left: 6rem;
+    margin-bottom: -100px;
+    z-index: 4;
+    position: relative;
+
+}
+#events_corousel{
+	margin-top:250px;
+	width: 100%;
+    max-width: 600px;
+    transform: rotate(2deg);
+
+
+}
+
+body{
+	background-image:url("topography.png");
+	background-repeat: repeat;
 }
 
 
