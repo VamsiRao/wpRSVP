@@ -9,9 +9,9 @@
 <div class="jumbotron jumbotron-inverse jumbotron-hero jumbo-bg">
 
 	<!-- <video id="video_background" preload muted autoplay loop>
-	    <source  src="<?php echo get_template_directory_uri(); ?>/events_video.mp4" type="video/mp4">
+	    <source  src="<?php //echo get_template_directory_uri(); ?>/events_video.mp4" type="video/mp4">
   	</video> -->
-  		
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-xs-12">				
@@ -47,7 +47,7 @@
 					</div>
 					<br>
 					<div class="col-md-12 col-xs-12">
-						<button type="button" class="btn btn-success btn-green-round-lg btn-lg" >Request Invite</button>
+						<button type="button" class="btn btn-success btn-green-round-lg btn-lg" type ="button" data-toggle="modal" data-target="#request_modal" >Request Invite</button>
 					</div>
 
 				</div>
@@ -55,6 +55,59 @@
 		</div>
 	</div>
 </div>
+<!-- REQUEST MODAL -->
+<div id="request_modal" class="modal fade" role="form">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+
+				<button class="close" type= "button" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Request Form</h4>
+				
+			</div>
+			<div class="modal-body">
+				<div class="row">
+				
+				<form  id="request_form" name="request_form" method="POST" data-toggle="validator" >
+								<div class="form-group col-xs-12">
+									<label for="request_name" class="control-label" >Name</label>
+									<input type="text" class="form-control" id="request_name" name="request_name" placeholder="Your Name" required>
+								</div>
+
+								<div class="form-group col-xs-12">
+									<label for="request_email" >Email Address</label>
+									<input type="email" class="form-control" id="request_email" name="request_email" placeholder="Your Email Addr." required>
+								</div>
+
+								<div class="form-group col-xs-12">
+									<label for="request_phone" >Phone Number</label>
+									<input type="text" class="form-control" id="request_phone" name="request_phone" placeholder="Your Phone No." required>
+								</div>
+		
+								
+
+								
+											
+							
+								
+				</form>
+				</div>
+				</div>
+				<div class="modal-footer">
+					
+					<button type="button" class="btn btn-success btn-green-round-default"  id="request_submit" onclick="validateRequestForm();">Submit</button>
+
+				</div>				
+
+			
+	
+			
+		</div>
+	</div>
+</div>
+
+
+<!-- THE CAROUSEL AND NOTEBOOK CONTAINER -->
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 col-xs-12">

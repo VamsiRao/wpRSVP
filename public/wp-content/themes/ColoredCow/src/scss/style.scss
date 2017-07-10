@@ -99,7 +99,7 @@ Text Domain: coloredcow
 		padding-right: 10px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+.jumbotron *{
 
 		color: white;    
     	font-family: 'Roboto', sans-serif;    	
@@ -115,7 +115,7 @@ Text Domain: coloredcow
 		background-image:url("pink dust.png");
 		background-repeat: repeat;
 		position:relative;
-		z-index: -101;
+		//z-index: -101;
 
 		/*TO DO:FOR THE VIDEO BACKGROUND
 		 z-index: -100;
@@ -126,7 +126,7 @@ Text Domain: coloredcow
 
 }
 
-#video_background{
+/* #video_background{
 		  position: fixed;
 	   	 top: 0;
 	     right: 0;
@@ -135,7 +135,7 @@ Text Domain: coloredcow
 	     overflow: hidden;
 	     z-index: -100;
 	     background-size:100%;
-}
+} */
 .notebook {
     background: #fff;
     font-size: 2.0rem;
