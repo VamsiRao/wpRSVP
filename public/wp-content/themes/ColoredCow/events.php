@@ -20,11 +20,14 @@
 		 $eventDate=get_post_meta(get_the_ID(),'Event Date',true);
 		 $eventVenue=get_post_meta(get_the_ID(),'Event Venue',true);
 
-		 echo"<h1 id='banner_name' style='text-align: center;'>Event: $eventName </h1><br>".
-			"<h1 id='banner_theme' style='text-align: center;'>Theme: $eventTheme</h1><br>".
-			"<h1 id='banner_date' style='text-align: center;'><i class='fa fa-calendar-o' aria-hidden='true'></i>  $eventDate</h1><br>".
-			"<h1 id='banner_venue' style='text-align: center;'><i class='fa fa-map-marker' aria-hidden='true'></i>  $eventVenue</h3> <br><br>";
-		  
+		
+		 echo"<div class='jumbotron' >
+			 	<h2 id='banner_name' style='text-align: center;'>Event: $eventName </h2><br>".
+				"<h2 id='banner_theme' style='text-align: center;'>Theme: $eventTheme</h2><br>".
+				"<h2 id='banner_date' style='text-align: center;'><i class='fa fa-calendar-o' aria-hidden='true'></i>  $eventDate</h2><br>".
+				"<h2 id='banner_venue' style='text-align: center;'><i class='fa fa-map-marker' aria-hidden='true'></i>  $eventVenue</h2> <br><br>
+				</div>";
+
 		
 	endwhile;
 
