@@ -34,6 +34,7 @@ Text Domain: coloredcow
 	}
 }
 
+
 .navbar-inverse {
 	    
 	   background-color: #000;   
@@ -110,10 +111,30 @@ Text Domain: coloredcow
 	
 }
 .jumbo-bg{
+
 		background-image:url("pink dust.png");
 		background-repeat: repeat;
-	
+		position:relative;
+		z-index: -101;
 
+		/*TO DO:FOR THE VIDEO BACKGROUND
+		 z-index: -100;
+		background: url('events_video.mp4') no-repeat;
+  		background-size: cover;
+  		transition: 1s opacity; */
+
+
+}
+
+#video_background{
+		  position: fixed;
+	   	 top: 0;
+	     right: 0;
+	     bottom: 0;
+	     left: 0;
+	     overflow: hidden;
+	     z-index: -100;
+	     background-size:100%;
 }
 .notebook {
     background: #fff;
@@ -127,23 +148,34 @@ Text Domain: coloredcow
     background-position: 4rem 0, 0 5px;
     background-size: 100% 3rem;
     padding-left: 6rem;
-    margin-bottom: -100px;
+    margin-bottom: 70px;
     z-index: 4;
     position: relative;
 
 }
-#events_corousel{
-	margin-top:250px;
-	width: 100%;
-    max-width: 600px;
-    transform: rotate(2deg);
 
+#events_carousel, #events_carousel> div,
+#events_carousel> div> img , #events_carousel> div> div> img,
+ #events_carousel> a, #events_carousel> a> span{
+		
+    max-width: 550px;
+    transform: rotate(2deg);
 
 }
 
 body{
 	background-image:url("topography.png");
 	background-repeat: repeat;
+}
+
+.footer{
+	background:#000;
+    min-height: 70px;
+    margin-top: 100px;
+   /* TO DO:SET CC LOGO AT BOTTOM RIGHT
+     background-image:url("coloredcow-logo-white.png");
+    background-position:right;
+    background-size:50px ; */
 }
 
 
